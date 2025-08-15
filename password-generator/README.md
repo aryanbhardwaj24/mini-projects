@@ -1,59 +1,117 @@
-# PasswordGenerator
+# Password Generator - Angular App
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.6.
+A professional, simple Angular app for generating secure, custom passwords. Easily choose password length and select which character sets (letters, numbers, symbols) you'd like included. Perfect for quickly getting random passwords for any site or service.
 
-## Development server
+---
 
-To start a local development server, run:
+## Screenshot
 
-```bash
-ng serve
-```
+<img src="./public/screenshot1.png" alt="Screenshot" width="1000" style="margin-bottom: 20px">
+<img src="./public/screenshot2.png" alt="Screenshot" width="1000">
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## Features
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- **Adjustable length:** Set password length with a simple input.
+- **Character set selection:** Toggle inclusion of letters, numbers, and symbols.
+- **Instant generation:** Create strong, random passwords with a click.
+- **Bulma CSS:** Clean, responsive design using Bulma.
 
-```bash
-ng generate component component-name
-```
+---
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Getting Started
 
-```bash
-ng generate --help
-```
+### Prerequisites
 
-## Building
+- **Node.js** (LTS recommended)
+- **npm** (comes with Node.js)
+- **Angular CLI** (`@angular/cli` v20+)
 
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+### Installation
 
 ```bash
-ng test
+  git clone https://github.com/aryanbhardwaj24/mini-projects
 ```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
 
 ```bash
-ng e2e
+  cd mini-projects/password-generator
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+```js
+  npm install
+```
 
-## Additional Resources
+### Running the App
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Start the local development server:
+
+```js
+npm start
+```
+
+Visit [http://localhost:4200](http://localhost:4200) in your browser.
+
+---
+
+## Usage
+
+1. **Choose length:** Enter desired password length.
+2. **Select character types:** Use the checkboxes to include Letters, Numbers, and/or Symbols.
+3. **Generate:** Click "Generate Password 😎" to create your new password.
+4. **Copy:** Copy your password from the displayed input.
+
+---
+
+## Customization
+
+- To change design, modify `styles.css` or adjust Bulma classes in `app.html`.
+- For password rules or character sets, edit the variables in `onButtonClick()` inside `app.ts`.
+
+---
+
+## Scripts
+
+| Command     | Description                         |
+| ----------- | ----------------------------------- |
+| `npm start` | Launch dev server at localhost:4200 |
+| `npm build` | Build app for production            |
+| `npm test`  | Run unit tests                      |
+
+---
+
+## Dependencies
+
+- **Angular v20+**: Framework
+- **Bulma v1+**: CSS Framework
+- **RxJS**: Reactive programming
+
+See `package.json` for complete listings.
+
+---
+
+## License
+
+This project is **private** by default. Make sure to add your preferred license before releasing publicly.
+
+---
+
+## Contributing
+
+Feel free to submit issues or pull requests! For major changes, please open an issue first to discuss what you'd like to modify.
+
+---
+
+## Acknowledgments
+
+- **Angular** for the robust SPA foundation.
+- **Bulma** for easy-to-use responsive styling.
+
+---
+
+## 👤 Author
+
+**Aryan Bhardwaj**
+
+- [LinkedIn](https://www.linkedin.com/in/aryanbhardwaj24/)
+- [Github](https://github.com/aryanbhardwaj24/)
