@@ -8,10 +8,16 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.css',
 })
 export class App {
+  length = 0;
   includeLetters = false;
   includeNumbers = false;
   includeSymbols = false;
   password = '';
+
+  onChangeLength(length: string) {
+    this.length = 0;
+    if (isFinite(+length)) this.length = +length;
+  }
 
   onChangeUseLetters() {
     this.includeLetters = !this.includeLetters;
