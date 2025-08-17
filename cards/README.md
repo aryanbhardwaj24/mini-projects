@@ -1,59 +1,122 @@
 # Cards
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.6.
+A clean, modern Angular 20 application that displays a collection of card posts, each with an image, username, title, and content. The app highlights modular architecture using a reusable `card` component styled with Bulma CSS.
 
-## Development server
+---
 
-To start a local development server, run:
+## Features
 
-```bash
-ng serve
-```
+- **Reusable Card Component:** Display posts as card elements with title, username, image, and descriptive content.
+- **Modular Architecture:** Easy separation of concerns with `app` (parent) and `card` (child) components.
+- **Responsive Styling:** Uses Bulma CSS for elegant, responsive design.
+- **Simple Data Binding:** List of posts rendered with Angular's modern syntax and signals.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## Getting Started
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### Prerequisites
 
-```bash
-ng generate component component-name
-```
+- **Node.js** (LTS version recommended)
+- **npm** (comes with Node.js)
+- **Angular CLI** (`@angular/cli` v20+)
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
+### Installation
 
 ```bash
-ng build
+  git clone https://github.com/aryanbhardwaj24/mini-projects
 ```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
 
 ```bash
-ng test
+  cd mini-projects/cards
 ```
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
+```js
+  npm install
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+### Running the App
 
-## Additional Resources
+Start the local development server:
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+```js
+npm start
+```
+
+Visit [http://localhost:4200](http://localhost:4200) in your browser.
+
+---
+
+## Usage
+
+1. On loading, you'll see a set of visually appealing cards, each showing:
+   - **Image**
+   - **Title**
+   - **Username**
+   - **Content**
+2. Add new posts to the `posts` array in `app.ts` to display more cards.
+3. Customize card visuals using `card.css` or global styles in `app.css`.
+
+---
+
+## Scripts
+
+| Command     | Description              |
+| ----------- | ------------------------ |
+| `npm start` | Run local dev server     |
+| `npm build` | Build app for production |
+| `npm test`  | Run unit tests           |
+
+---
+
+## Dependencies
+
+- **Angular v20+**
+- **Bulma v1+**
+- **RxJS**
+- See `package.json` for details.
+
+---
+
+## How to Add a Post
+
+In `app.ts`, add a new object to the `posts` array, e.g.:
+
+```js
+{
+title: 'Sunset Beach',
+username: 'beachlover',
+imageURL: 'images/beach.jpeg',
+content: 'Enjoyed a beautiful sunset at the beach!',
+}
+```
+
+---
+
+## Customization
+
+- Update styles in `app.css` and `card.css` for global or card-specific look.
+- Extend `card.ts` and `card.html` for more features, such as user avatars or links.
+- Replace Bulma classes in the HTML files as desired.
+
+---
+
+## Contributing
+
+Feel free to submit issues or pull requests! For major changes, please open an issue first to discuss what you'd like to modify.
+
+---
+
+## Acknowledgments
+
+- **Angular** for the robust SPA foundation.
+- **Bulma** for easy-to-use responsive styling.
+
+---
+
+## 👤 Author
+
+**Aryan Bhardwaj**
+
+- [LinkedIn](https://www.linkedin.com/in/aryanbhardwaj24/)
+- [Github](https://github.com/aryanbhardwaj24/)
