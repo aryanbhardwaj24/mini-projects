@@ -11,4 +11,9 @@ export class App {
   protected readonly title = signal('typing');
 
   randomSentence = faker.lorem.sentence();
+  inputSentence = '';
+
+  onChangeInputText(inputText: string) {
+    this.inputSentence = inputText;
+  }
 }
