@@ -5,7 +5,19 @@
         <strong>Typing Challenge</strong>
       </h1>
 
-      <p class="has-text-centered">{{ randomSentence }}</p>
+      <p class="has-text-centered">
+        @for(letter of inputSentence; track $index) {
+          @if(letter===randomSentence[$index]) {
+            <span style="color: green">{{letter}}</span>
+          }
+          @else {
+            <span style="color: red; font-weight: bold">{{letter}}</span>
+          }
+        }
+        @if(inputSentence.length<randomSentence.length) {
+          <span>{{randomSentence.substring(inputSentence.length)}}</span>
+        }
+      </p>
 
       <div class="field">
         <input class="input" (input)="onChangeInputText($event.target.value)" />
