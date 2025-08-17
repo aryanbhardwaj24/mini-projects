@@ -1,1 +1,8 @@
-<app-card></app-card>
+@for (post of posts; track $index) {
+<app-card
+  [title]="post.title"
+  [username]="post.username"
+  [imageUrl]="post.imageURL"
+  [content]="post.content"
+></app-card>
+}
