@@ -4,6 +4,12 @@ A clean, modern Angular 20 application that displays a collection of card posts,
 
 ---
 
+## Screenshot
+
+<img src="public/screenshot.png" alt="Screenshot" width="1000">
+
+---
+
 ## Features
 
 - **Reusable Card Component:** Display posts as card elements with title, username, image, and descriptive content.
